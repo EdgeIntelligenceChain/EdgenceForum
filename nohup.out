@@ -1,0 +1,41 @@
+
+python3.6: can't open file 'gunicorn': [Errno 2] No such file or directory
+/usr/local/bin/python3.6: No module named gunicorn
+/usr/local/bin/python3.6: No module named gunicorn
+/root/flaskbb/venv/bin/python3.6: No module named gunicorn.__main__; 'gunicorn' is a package and cannot be directly executed
+usage: celery worker [options] 
+celery: error: unrecognized arguments: --log-file logs/celery.log
+/root/flaskbb/venv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+[2019-06-25 06:32:43,555: INFO/MainProcess] Connected to redis://localhost:6379//
+[2019-06-25 06:32:43,582: INFO/MainProcess] mingle: searching for neighbors
+[2019-06-25 06:32:44,634: INFO/MainProcess] mingle: all alone
+[2019-06-25 06:32:44,649: INFO/MainProcess] celery@edgence ready.
+[2019-06-25 06:34:53,824: INFO/MainProcess] Received task: flaskbb.email.send_activation_token[bbd3d053-e6b0-41c3-bfc6-5455bfdb1658]  
+/root/flaskbb/venv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+[2019-06-25 06:34:57,506: INFO/ForkPoolWorker-1] Task flaskbb.email.send_activation_token[bbd3d053-e6b0-41c3-bfc6-5455bfdb1658] succeeded in 3.6795463919988833s: None
+[2019-06-25 08:03:09,073: INFO/MainProcess] Received task: flaskbb.email.send_activation_token[f4a6f6e5-29cd-4aed-a485-7da1e13d62ac]  
+[2019-06-25 08:03:12,934: INFO/ForkPoolWorker-1] Task flaskbb.email.send_activation_token[f4a6f6e5-29cd-4aed-a485-7da1e13d62ac] succeeded in 3.8594806890469044s: None
+[2019-06-26 03:26:27,522: INFO/MainProcess] Received task: flaskbb.email.send_activation_token[f4918a6e-4016-4a3f-8350-3e140337d2a8]  
+[2019-06-26 03:26:32,265: INFO/ForkPoolWorker-1] Task flaskbb.email.send_activation_token[f4918a6e-4016-4a3f-8350-3e140337d2a8] succeeded in 4.73514315095963s: None
+[2019-06-26 04:35:17,923: INFO/MainProcess] Received task: flaskbb.email.send_activation_token[94bf88e8-9aa7-488f-bfd3-b91b427708d7]  
+[2019-06-26 04:35:21,561: INFO/ForkPoolWorker-1] Task flaskbb.email.send_activation_token[94bf88e8-9aa7-488f-bfd3-b91b427708d7] succeeded in 3.637471166031901s: None
+[2019-06-26 09:39:52,561: INFO/MainProcess] Received task: flaskbb.email.send_activation_token[f4bb0a26-f27c-425d-bf35-ecbb3e3c4680]  
+[2019-06-26 09:39:56,753: INFO/ForkPoolWorker-1] Task flaskbb.email.send_activation_token[f4bb0a26-f27c-425d-bf35-ecbb3e3c4680] succeeded in 4.190649377007503s: None
+[2019-06-27 04:08:51,527: INFO/MainProcess] Received task: flaskbb.email.send_activation_token[3aff3194-6446-420f-b6f6-7ade32a13cf0]  
+[2019-06-27 04:08:55,691: INFO/ForkPoolWorker-1] Task flaskbb.email.send_activation_token[3aff3194-6446-420f-b6f6-7ade32a13cf0] succeeded in 4.1628687240881845s: None
+[2019-06-27 21:38:59,874: INFO/MainProcess] Received task: flaskbb.email.send_activation_token[66f86dd6-d254-4522-8e7a-efa83ec20053]  
+[2019-06-27 21:39:04,004: INFO/ForkPoolWorker-1] Task flaskbb.email.send_activation_token[66f86dd6-d254-4522-8e7a-efa83ec20053] succeeded in 4.114401131984778s: None

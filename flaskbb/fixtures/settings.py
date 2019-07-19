@@ -37,7 +37,7 @@ fixture = (
                 (
                     "project_subtitle",
                     {
-                        "value": "Edegnce Community",
+                        "value": "Edgence Community",
                         "value_type": SettingValueType.string,
                         "name": "Project subtitle",
                         "description": "A short description of the project.",

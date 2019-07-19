@@ -8,7 +8,7 @@
         <meta name="author" content="FlaskBB Team">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-
+        
         <title>
         {% block title %}
             {%- if not page_title -%}
@@ -41,6 +41,28 @@
 
     <body>
 
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">Edgence</a>
+                </div>
+                <li class="navbar-collapse collapse">
+        
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://www.edgence.org">Home</a></li>
+                        <li><a href="https://www.edgence.org/Explorer">Explorer</a></li>
+                        <li><a href="/">Forum</a></li>
+                        <li><a href="https://github.com/EdgeIntelligenceChain" target="view_window">Github</a></li>
+                        
+                    </ul>
+            </div>
+        </div>
         <!-- main forum layout -->
         <div class="flaskbb-layout">
             <div class="container">
@@ -153,13 +175,22 @@
             {% block footer %}
             <footer class="flaskbb-footer">
                 <div class="container">
+                    <img src="{{ url_for('static', filename='xiaohui.jpg') }}" width=250px style="float:left;margin-right: 100px">
+                    <p style="font-size:200%;margin-bottom:40px;color: black"> Affiliation and Foundation </p>
+                    <p>● State Key Laboratory of Networking and Switching Technology</p>
+                    <p>&nbsp;&nbsp;&nbsp;Beijing University of Posts and Telecommunications, China</p>
+                    <p>● Supported by National Key R&D Program of China (Grant No.2018YFB1004800)</p>
+                    <p>● Contact us: <a href="http://www.jinliangxu.com//cv/ ">Ph.D candidate Jinliang Xu</a>, <a
+                                href="http://www.sguangwang.com/">Prof. Shangguang Wang</a></p>
+                </div>
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="text-muted text-left">{{ flaskbb_config["PROJECT_COPYRIGHT"] | safe }}</div>
+                            <!-- <div class="text-muted text-left">{{ flaskbb_config["PROJECT_COPYRIGHT"] | safe }}</div> -->
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="text-muted text-right">powered by <a href="https://flaskbb.org">FlaskBB</a></div>
-                            <div class="text-muted text-right">&copy; 2013 - {{ now.year }} <a href="https://flaskbb.org">FlaskBB Team</a></div>
+                            <div class="text-muted text-right">powered by <a href="https://www.edgence.org">Edgence</a></div>
+                            <div class="text-muted text-right">&copy; 2018 - {{ now.year }} <a href="https://www.edgence.org">Edgence Team</a></div>
                         </div>
                     </div>
                 </div>
